@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2b2d42"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="50dp"
+                        android:text="Shape Calculator"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <ImageButton
+                        android:id="@+id/Square"
+                        android:layout_width="wrap_content"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#FF595E"
+                        android:contentDescription="@string/square_area"
+                        android:onClick="squareArea"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/square" />
+
+                    <ImageButton
+                        android:id="@+id/sphere"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#8AC926"
+                        android:contentDescription="@string/sphere_area"
+                        android:onClick="sphereArea"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/sphere" />
+
+                    <ImageButton
+                        android:id="@+id/cylinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#70c1b3"
+                        android:contentDescription="@string/cylinder_area"
+                        android:cropToPadding="true"
+                        android:onClick="cylinderArea"
+                        android:padding="40dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/cylinder" />
+
+                    <ImageButton
+                        android:id="@+id/triangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#FFCA3A"
+                        android:contentDescription="@string/triangel_area"
+                        android:onClick="triangleArea"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/triangle" />
+
+                    <ImageButton
+                        android:id="@+id/circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#1982C4"
+                        android:contentDescription="@string/circle_area"
+                        android:onClick="circleArea"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/circle" />
+
+                    <ImageButton
+                        android:id="@+id/cube"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="#ff7f51"
+                        android:contentDescription="@string/cube_area"
+                        android:onClick="cubeArea"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/cube" />
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

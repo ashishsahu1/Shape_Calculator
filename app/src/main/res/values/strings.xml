@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AreaCalc</string>
+    <string name="triangel_area">Triangel ARea</string>
+    <string name="square_area">Square Area</string>
+    <string name="circle_area">Circle Area</string>
+    <string name="sphere_area">Sphere Area</string>
+    <string name="cube_area">Cube Area</string>
+    <string name="cylinder_area">Cylinder Area</string>
+</resources>
